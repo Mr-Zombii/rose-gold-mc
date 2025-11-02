@@ -12,5 +12,6 @@ object RoseGold : ModInitializer {
 		logger.info("Hello Fabric world!")
 
         RoseGoldItems.registerItems()
+        RoseGoldBlocks.init()
 	}
 }
