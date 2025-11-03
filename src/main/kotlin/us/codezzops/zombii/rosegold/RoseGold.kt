@@ -9,6 +9,7 @@ object RoseGold : ModInitializer {
         RoseGoldItems.init()
         RoseGoldArmorItems.init()
         RoseGoldBlocks.init()
+        RoseGoldLootTables.registerLoot()
 	}
 
 }
