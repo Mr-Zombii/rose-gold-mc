@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smithing_trim",
+  "type": "minecraft:smithing_transform",
   "template": "rose_gold:rose_gold_smithing_upgrade_template",
   "base": "minecraft:iron_sword",
   "addition": "rose_gold:rose_gold_ingot",

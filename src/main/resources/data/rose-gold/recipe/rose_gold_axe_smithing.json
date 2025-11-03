@@ -1,19 +1,9 @@
 {
   "type": "minecraft:smithing_transform",
-  "template": {
-    "fabric:type": "minecraft:item",
-    "item": "rose_gold:rose_gold_smithing_upgrade_template"
-  },
-  "base": {
-    "fabric:type": "minecraft:item",
-    "item": "minecraft:iron_axe"
-  },
-  "addition": {
-    "fabric:type": "minecraft:item",
-    "item": "rose_gold:rose_gold_ingot"
-  },
+  "template": "rose_gold:rose_gold_smithing_upgrade_template",
+  "base": "minecraft:iron_axe",
+  "addition": "rose_gold:rose_gold_ingot",
   "result": {
-    "id": "rose_gold:rose_gold_axe",
-    "components": {}
+    "id": "rose_gold:rose_gold_axe"
   }
 }
