@@ -2,15 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "###",
-    "#G#",
+    "###",
     "###"
   ],
   "key": {
-    "#": "rose_gold:rose_gold_nugget",
-    "G": "minecraft:golden_carrot"
+    "#": "rose_gold:raw_rose_gold_iron"
   },
   "result": {
-    "id": "rose_gold:rose_gold_carrot",
+    "id": "rose_gold:raw_rose_gold_iron_block",
     "count": 1
   }
 }

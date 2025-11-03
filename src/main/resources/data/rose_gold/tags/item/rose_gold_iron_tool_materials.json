@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "rose_gold:rose_gold_iron_ingot"
+    "rose_gold:rose_gold_iron_ingot",
+    "rose_gold:rose_gold_diamond",
+    "rose_gold:rose_gold_netherite_ingot"
   ]
 }

@@ -3,7 +3,12 @@
 
   "item.rose_gold.raw_rose_gold": "Raw Rose Gold",
   "item.rose_gold.raw_rose_gold_iron":"Raw Rose Gold Iron",
+  "item.rose_gold.raw_rose_gold_iron_block": "Block of Iron Infused Raw Rose Gold",
   "item.rose_gold.raw_rose_gold_block": "Block of Raw Rose Gold",
+
+  "item.rose_gold.rose_gold_ingot": "Rose Gold Ingot",
+  "item.rose_gold.rose_gold_block": "Rose Gold Block",
+  "item.rose_gold.rose_gold_nugget": "Rose Gold Nugget",
 
   "item.rose_gold.rose_gold_apple": "Rose Gold Apple",
   "item.rose_gold.rose_gold_carrot": "Rose Gold Carrot",

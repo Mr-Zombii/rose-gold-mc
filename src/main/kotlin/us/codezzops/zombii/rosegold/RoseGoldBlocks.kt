@@ -46,6 +46,16 @@ object RoseGoldBlocks {
         { props -> Block(props) }
     )
 
+    val RAW_ROSE_GOLD_IRON_BLOCK: Block = register(
+        "raw_rose_gold_iron_block",
+        { props -> Block(props) }
+    )
+
+    val ROSE_GOLD_BLOCK: Block = register(
+        "rose_gold_block",
+        { props -> Block(props) }
+    )
+
     val ROSE_GOLD_IRON_BLOCK: Block = register(
         "rose_gold_iron_block",
         { props -> Block(props) }
@@ -53,6 +63,11 @@ object RoseGoldBlocks {
 
     val ROSE_GOLD_DIAMOND_BLOCK: Block = register(
         "rose_gold_diamond_block",
+        { props -> Block(props) }
+    )
+
+    val ROSE_GOLD_NETHERITE_BLOCK: Block = register(
+        "rose_gold_netherite_block",
         { props -> Block(props) }
     )
 

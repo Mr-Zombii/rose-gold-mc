@@ -110,6 +110,16 @@ object RoseGoldItems {
             ROSE_GOLD_CARROT_CONSUMABLE_COMPONENT))
     }
 
+    // PURE ROSE GOLD
+
+    val ROSE_GOLD_INGOT = registerItem(
+        "rose_gold_ingot"
+    ) { properties -> Item(properties) }
+
+    val ROSE_GOLD_NUGGET = registerItem(
+        "rose_gold_nugget"
+    ) { properties -> Item(properties) }
+
     //IRON INFUSED
 
     val ROSE_GOLD_IRON_INGOT = registerItem(
