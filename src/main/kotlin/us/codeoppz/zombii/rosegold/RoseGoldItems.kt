@@ -18,7 +18,7 @@ object RoseGoldItems {
             Registries.BLOCK.key,
             Identifier.of(RoseGold.MOD_ID, "incorrect_for_rose_gold_tool")
         ),
-        0, 0f, 0f, 1, TagKey.of(
+        750, 6.0f, 2.0f, 22, TagKey.of(
             Registries.ITEM.key,
             Identifier.of(RoseGold.MOD_ID, "rose_gold_materials")
         )
@@ -63,34 +63,34 @@ object RoseGoldItems {
         Identifier.of(RoseGold.MOD_ID, "rose_gold_sword")
     ) {
         properties ->
-        properties.sword(material, 0f, 0f)
+        properties.sword(material, 3.0f, -2.4f)
         Item(properties)
     }
 
     val ROSE_GOLD_AXE = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_axe")
     ) { properties ->
-        AxeItem(material, 0f, 0f, properties)
+        AxeItem(material, 6.0f, -3.0f, properties)
     }
 
     val ROSE_GOLD_PICKAXE = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_pickaxe")
     ) { properties ->
-        properties.axe(material, 0f, 0f)
+        properties.axe(material, 1.5f, -2.8f)
         Item(properties)
     }
 
     val ROSE_GOLD_SHOVEL = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_shovel")
     ) { properties ->
-        ShovelItem(material, 0f, 0f, properties)
+        ShovelItem(material, -0.5f, -3.0f, properties)
     }
 
     val ROSE_GOLD_HOE /* YOU 🫵 */ = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_hoe")
     ) { properties ->
         Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE
-        HoeItem(material, 0f, 0f, properties)
+        HoeItem(material, -2.0f, -3.0f, properties)
     }
 
     var NETHERITE_UPGRADE_APPLIES_TO_TEXT: Text? = Text.translatable(
