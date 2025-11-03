@@ -20,13 +20,13 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "us.codeoppz.zombii.rosegold.RoseGold",
+				"value": "us.codezzops.zombii.rosegold.RoseGold",
 				"adapter": "kotlin"
 			}
 		],
 		"client": [
 			{
-				"value": "us.codeoppz.zombii.rosegold.RoseGoldClient",
+				"value": "us.codezzops.zombii.rosegold.RoseGoldClient",
 				"adapter": "kotlin"
 			}
 		]

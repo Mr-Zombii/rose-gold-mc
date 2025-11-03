@@ -1,9 +1,7 @@
-package us.codeoppz.zombii.rosegold
+package us.codezzops.zombii.rosegold
 
-import net.minecraft.entity.EquipmentSlot
 import net.minecraft.item.*
 import net.minecraft.registry.Registries
-import net.minecraft.registry.Registry
 import net.minecraft.registry.RegistryKey
 import net.minecraft.registry.tag.TagKey
 import net.minecraft.text.Text

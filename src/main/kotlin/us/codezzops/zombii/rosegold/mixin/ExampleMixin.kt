@@ -1,4 +1,4 @@
-package us.codeoppz.zombii.rosegold.mixin
+package us.codezzops.zombii.rosegold.mixin
 
 import net.minecraft.server.MinecraftServer
 import org.spongepowered.asm.mixin.Mixin

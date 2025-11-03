@@ -1,4 +1,4 @@
-package us.codeoppz.zombii.rosegold
+package us.codezzops.zombii.rosegold
 
 import com.google.common.collect.Maps
 import net.minecraft.item.Item
@@ -11,7 +11,7 @@ import net.minecraft.registry.RegistryKeys
 import net.minecraft.registry.tag.TagKey
 import net.minecraft.sound.SoundEvents
 import net.minecraft.util.Identifier
-import us.codeoppz.zombii.rosegold.RoseGoldItems.registerItem
+import us.codezzops.zombii.rosegold.RoseGoldItems.registerItem
 import java.util.Map
 
 object RoseGoldArmorItems {
@@ -41,15 +41,15 @@ object RoseGoldArmorItems {
 
     val REGISTRY_KEY: RegistryKey<out Registry<EquipmentAsset?>?> = RegistryKey.ofRegistry<EquipmentAsset?>(Identifier.ofVanilla("equipment_asset"))
     val ROSE_GOLD_ARMOR_MATERIAL: ArmorMaterial = ArmorMaterial(
-        20, // durability
+        30, // durability
         createDefenseMap(
             2,
             5,
-            6,
-            2,
-            5
+            7,
+            3,
+            6
         ),
-        22, // enchantmentValue
+        25, // enchantmentValue
         SoundEvents.ITEM_ARMOR_EQUIP_IRON,
         0.5f, // toughness
         0.0f, // knockbackResistance

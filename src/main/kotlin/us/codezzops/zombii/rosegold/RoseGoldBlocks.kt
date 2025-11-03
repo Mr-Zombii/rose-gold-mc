@@ -1,4 +1,4 @@
-package us.codeoppz.zombii.rosegold
+package us.codezzops.zombii.rosegold
 
 import net.minecraft.block.AbstractBlock
 import net.minecraft.block.Block
