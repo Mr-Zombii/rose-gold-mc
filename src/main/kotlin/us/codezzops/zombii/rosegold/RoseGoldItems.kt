@@ -51,6 +51,10 @@ object RoseGoldItems {
         "raw_rose_gold"
     ) { properties -> Item(properties) }
 
+    val RAW_ROSE_GOLD_IRON = registerItem(
+        "raw_rose_gold_iron"
+    ) { properties -> Item(properties) }
+
     val ROSE_GOLD_APPLE_COMPONENT: FoodComponent = FoodComponent.Builder()
         .nutrition(6)//TODO this ok?
         .saturationModifier(0.5f) //TODO 80% saturation
@@ -106,7 +110,7 @@ object RoseGoldItems {
     //IRON INFUSED
 
     val ROSE_GOLD_IRON_INGOT = registerItem(
-        "rose_gold__iron_ingot"
+        "rose_gold_iron_ingot"
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_IRON_NUGGET = registerItem(
