@@ -3,7 +3,6 @@ package us.codeoppz.zombii.rosegold
 import com.google.common.collect.Maps
 import net.minecraft.item.Item
 import net.minecraft.item.equipment.ArmorMaterial
-import net.minecraft.item.equipment.EquipmentAsset
 import net.minecraft.item.equipment.EquipmentType
 import net.minecraft.registry.RegistryKey
 import net.minecraft.registry.RegistryKeys
@@ -39,7 +38,7 @@ object RoseGoldArmorItems {
     }
 
     val ROSE_GOLD_ARMOR_MATERIAL: ArmorMaterial = ArmorMaterial(
-        15, // durability
+        20, // durability
         createDefenseMap(
             2,
             5,
@@ -47,9 +46,9 @@ object RoseGoldArmorItems {
             2,
             5
         ),
-        300, // enchantmentValue
+        22, // enchantmentValue
         SoundEvents.ITEM_ARMOR_EQUIP_IRON,
-        0.0f, // toughness
+        0.5f, // toughness
         0.0f, // knockbackResistance
         TagKey.of(
             RegistryKeys.ITEM,
@@ -63,34 +62,26 @@ object RoseGoldArmorItems {
 
     val ROSE_GOLD_HELMET = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_helmet")
-    ) {
-            properties ->
-        properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.HELMET)
-        Item(properties)
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.HELMET))
     }
 
     val ROSE_GOLD_CHESTPLATE = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_chestplate")
-    ) {
-            properties ->
-        properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.CHESTPLATE)
-        Item(properties)
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.CHESTPLATE))
     }
 
     val ROSE_GOLD_LEGGINGS = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_leggings")
-    ) {
-            properties ->
-        properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.LEGGINGS)
-        Item(properties)
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.LEGGINGS))
     }
 
     val ROSE_GOLD_BOOTS = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_boots")
-    ) {
-            properties ->
-        properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.BOOTS)
-        Item(properties)
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.BOOTS))
     }
 
     fun init() {}

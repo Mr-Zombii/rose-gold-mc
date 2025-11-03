@@ -61,10 +61,8 @@ object RoseGoldItems {
 
     val ROSE_GOLD_SWORD = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_sword")
-    ) {
-        properties ->
-        properties.sword(material, 3.0f, -2.4f)
-        Item(properties)
+    ) { properties ->
+        Item(properties.sword(material, 3.0f, -2.4f))
     }
 
     val ROSE_GOLD_AXE = registerItem(
@@ -76,8 +74,7 @@ object RoseGoldItems {
     val ROSE_GOLD_PICKAXE = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_pickaxe")
     ) { properties ->
-        properties.axe(material, 1.5f, -2.8f)
-        Item(properties)
+        Item(properties.pickaxe(material, 1.5f, -2.8f))
     }
 
     val ROSE_GOLD_SHOVEL = registerItem(
@@ -89,7 +86,6 @@ object RoseGoldItems {
     val ROSE_GOLD_HOE /* YOU 🫵 */ = registerItem(
         Identifier.of(RoseGold.MOD_ID, "rose_gold_hoe")
     ) { properties ->
-        Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE
         HoeItem(material, -2.0f, -3.0f, properties)
     }
 
@@ -136,8 +132,6 @@ object RoseGoldItems {
         )
     }
 
-    fun init() {
-
-    }
+    fun init() {}
 
 }
