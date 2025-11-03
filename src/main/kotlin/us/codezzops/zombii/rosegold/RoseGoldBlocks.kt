@@ -43,12 +43,12 @@ object RoseGoldBlocks {
     )
 
     val ROSE_GOLD_IRON_BLOCK: Block = register(
-        "rose_gold_infused_iron_block",
+        "rose_gold_iron_block",
         { props -> Block(props) }
     )
 
     val ROSE_GOLD_DIAMOND_BLOCK: Block = register(
-        "rose_gold_infused_diamond_block",
+        "rose_gold_diamond_block",
         { props -> Block(props) }
     )
 

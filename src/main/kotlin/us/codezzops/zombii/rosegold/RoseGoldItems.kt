@@ -1,5 +1,10 @@
 package us.codezzops.zombii.rosegold
 
+import net.minecraft.component.type.ConsumableComponent
+import net.minecraft.component.type.ConsumableComponents
+import net.minecraft.component.type.FoodComponent
+import net.minecraft.entity.effect.StatusEffectInstance
+import net.minecraft.entity.effect.StatusEffects
 import net.minecraft.item.Item
 import net.minecraft.item.AxeItem
 import net.minecraft.item.ToolMaterial
@@ -7,6 +12,7 @@ import net.minecraft.item.Items
 import net.minecraft.item.ShovelItem
 import net.minecraft.item.HoeItem
 import net.minecraft.item.SmithingTemplateItem
+import net.minecraft.item.consume.ApplyEffectsConsumeEffect
 import net.minecraft.registry.Registries
 import net.minecraft.registry.RegistryKey
 import net.minecraft.registry.tag.TagKey
@@ -18,7 +24,7 @@ import java.util.function.Function
 
 object RoseGoldItems {
 
-    val material = ToolMaterial(
+    val material = ToolMaterial( //Rose gold Materials
         TagKey.of(
             Registries.BLOCK.key,
             Identifier.of(RoseGold.MOD_ID, "incorrect_for_rose_gold_tool")
@@ -45,24 +51,66 @@ object RoseGoldItems {
         "raw_rose_gold"
     ) { properties -> Item(properties) }
 
-    val ROSE_GOLD_INFUSED_IRON_INGOT = registerItem(
-        "rose_gold_infused_iron_ingot"
-    ) { properties -> Item(properties) }
+    val ROSE_GOLD_APPLE_COMPONENT: FoodComponent = FoodComponent.Builder()
+        .nutrition(6)//TODO this ok?
+        .saturationModifier(0.5f) //TODO 80% saturation
+        .alwaysEdible() //TODO Do we want this?
+        .build()
 
-    val ROSE_GOLD_INFUSED_DIAMOND = registerItem(
-        "rose_gold_infused_diamond"
+    val ROSE_GOLD_APPLE_CONSUMABLE_COMPONENT: ConsumableComponent = ConsumableComponents.food()
+        .consumeEffect(
+            ApplyEffectsConsumeEffect(
+                StatusEffectInstance(StatusEffects.REGENERATION, 200, 3), //TODO 20 tps * 10 sec, level 3
+                1.0f
+            )
+        )
+        .consumeEffect(
+            ApplyEffectsConsumeEffect(
+                StatusEffectInstance(StatusEffects.ABSORPTION, 2400, 2), //TODO 20 tps * 120 sec, level 3
+                1.0f
+            )
+        )//TODO change these ^^^
+        .build()
+
+    val ROSE_GOLD_APPLE = registerItem(
+        "rose_gold_apple"
+    ) { properties ->
+        Item(properties.food(
+            ROSE_GOLD_APPLE_COMPONENT,
+            ROSE_GOLD_APPLE_CONSUMABLE_COMPONENT))
+    }
+
+    val ROSE_GOLD_CARROT_COMPONENT: FoodComponent = FoodComponent.Builder()
+        .nutrition(8)//TODO this ok?
+        .saturationModifier(0.8f) //TODO 80% saturation
+        .alwaysEdible() //TODO Do we want this?
+        .build()
+
+    val ROSE_GOLD_CARROT_CONSUMABLE_COMPONENT: ConsumableComponent = ConsumableComponents.food()
+        .consumeEffect(
+            ApplyEffectsConsumeEffect(
+                StatusEffectInstance(StatusEffects.NIGHT_VISION, 200, 0), //TODO 20 tps * 10 sec, level 0
+                1.0f
+            )
+        )
+        .build()
+
+    val ROSE_GOLD_CARROT = registerItem(
+        "rose_gold_carrot"
+    ) { properties ->
+        Item(properties.food(
+            ROSE_GOLD_CARROT_COMPONENT,
+            ROSE_GOLD_CARROT_CONSUMABLE_COMPONENT))
+    }
+
+    //IRON INFUSED
+
+    val ROSE_GOLD_IRON_INGOT = registerItem(
+        "rose_gold__iron_ingot"
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_IRON_NUGGET = registerItem(
         "rose_gold_iron_nugget"
-    ) { properties -> Item(properties) }
-
-    val ROSE_GOLD_APPLE = registerItem(
-        "rose_gold_apple"
-    ) { properties -> Item(properties) }
-
-    val ROSE_GOLD_CARROT = registerItem(
-        "rose_gold_carrot"
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_IRON_SWORD = registerItem(
@@ -94,6 +142,16 @@ object RoseGoldItems {
     ) { properties ->
         HoeItem(material, -2.0f, -3.0f, properties)
     }
+
+    //DIAMOND INFUSED
+
+    val ROSE_GOLD_DIAMOND_INGOT = registerItem(
+        "rose_gold_diamond_ingot"
+    ) { properties -> Item(properties) }
+
+    val ROSE_GOLD_DIAMOND_NUGGET = registerItem(
+        "rose_gold_diamond_nugget"
+    ) { properties -> Item(properties) }
 
     val ROSE_GOLD_DIAMOND_SWORD = registerItem(
         "rose_gold_diamond_sword"

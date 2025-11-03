@@ -1,9 +1,13 @@
 {
   "item.rose_gold.raw_rose_gold": "Raw Rose Gold",
-  "item.rose_gold.rose_gold_ingot": "Rose Gold Ingot",
-  "item.rose_gold.rose_gold_nugget": "Rose Gold Nugget",
+  "item.rose_gold.raw_rose_gold_block": "Block of Raw Rose Gold",
+
   "item.rose_gold.rose_gold_apple": "Rose Gold Apple",
   "item.rose_gold.rose_gold_carrot": "Rose Gold Carrot",
+  "item.rose_gold.rose_gold_horse_armor": "Rose Gold Horse Armor",
+
+  "item.rose_gold.rose_gold_iron_ingot": "Rose Gold Ingot",
+  "item.rose_gold.rose_gold_iron_nugget": "Rose Gold Nugget",
   "item.rose_gold.rose_gold_iron_sword": "Rose Gold Iron Sword",
   "item.rose_gold.rose_gold_iron_axe": "Rose Gold Iron Axe",
   "item.rose_gold.rose_gold_iron_pickaxe": "Rose Gold Iron Pickaxe",
@@ -13,9 +17,9 @@
   "item.rose_gold.rose_gold_iron_chestplate": "Rose Gold Iron Chestplate",
   "item.rose_gold.rose_gold_iron_leggings": "Rose Gold Iron Leggings",
   "item.rose_gold.rose_gold_iron_boots": "Rose Gold Iron Boots",
-  "item.rose_gold.rose_gold_horse_armor": "Rose Gold Horse Armor",
+  "item.rose_gold.rose_gold_iron_infused_block": "Block of Iron Infused Rose Gold",
+
   "item.rose_gold.rose_gold_diamond_smithing_upgrade_template": "Rose Gold Diamond Upgrade Smithing Template",
-  "item.rose_gold.rose_gold_netherite_smithing_upgrade_template": "Rose Gold Netherite Upgrade Smithing Template",
-  "item.rose_gold.rose_gold_block": "Block of Rose Gold",
-  "item.rose_gold.raw_rose_gold_block": "Block of Raw Rose Gold"
+  "item.rose_gold.rose_gold_netherite_smithing_upgrade_template": "Rose Gold Netherite Upgrade Smithing Template"
+
 }

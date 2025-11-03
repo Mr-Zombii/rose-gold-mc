@@ -86,6 +86,14 @@ object RoseGoldArmorItems {
         )
     )
 
+    val ROSE_GOLD_HORSE_ARMOR = registerItem(
+        "rose_gold_horse_armor"
+    ) { properties ->
+        Item(properties.horseArmor(ROSE_GOLD_IRON_ARMOR_MATERIAL))
+    }
+
+    //IRON
+
     val ROSE_GOLD_IRON_HELMET = registerItem(
         "rose_gold_iron_helmet"
     ) { properties ->
@@ -110,6 +118,8 @@ object RoseGoldArmorItems {
         Item(properties.armor(ROSE_GOLD_IRON_ARMOR_MATERIAL, EquipmentType.BOOTS))
     }
 
+    //DIAMOND
+
     val ROSE_GOLD_DIAMOND_HELMET = registerItem(
         "rose_gold_diamond_helmet"
     ) { properties ->
@@ -132,12 +142,6 @@ object RoseGoldArmorItems {
         "rose_gold_diamond_boots"
     ) { properties ->
         Item(properties.armor(ROSE_GOLD_DIAMOND_ARMOR_MATERIAL, EquipmentType.BOOTS))
-    }
-
-    val ROSE_GOLD_HORSE_ARMOR = registerItem(
-        "rose_gold_horse_armor"
-    ) { properties ->
-        Item(properties.horseArmor(ROSE_GOLD_IRON_ARMOR_MATERIAL))
     }
 
     fun init() {}
