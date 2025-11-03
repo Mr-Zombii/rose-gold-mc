@@ -87,6 +87,12 @@ object RoseGoldArmorItems {
         Item(properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.BOOTS))
     }
 
+    val ROSE_GOLD_HORSE_ARMOR = registerItem(
+        "rose_gold_horse_armor"
+    ) { properties ->
+        Item(properties.horseArmor(ROSE_GOLD_ARMOR_MATERIAL))
+    }
+
     fun init() {}
 
 }
