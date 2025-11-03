@@ -2,12 +2,11 @@ package us.codezzops.zombii.rosegold
 
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents
 import net.minecraft.loot.LootPool
+import net.minecraft.loot.LootTable
+import net.minecraft.loot.condition.RandomChanceLootCondition
 import net.minecraft.loot.entry.ItemEntry
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider
 import net.minecraft.registry.RegistryKey
-import net.minecraft.registry.RegistryWrapper
-import net.minecraft.loot.LootTable
-import net.minecraft.loot.condition.RandomChanceLootCondition
 import net.minecraft.util.Identifier
 
 object RoseGoldLootTables {
@@ -30,7 +29,7 @@ object RoseGoldLootTables {
             Identifier.of("minecraft", "chests/fortress")
         )
 
-        LootTableEvents.MODIFY.register { id: RegistryKey<LootTable>, tableBuilder, source, registryLookup: RegistryWrapper.WrapperLookup ->
+        LootTableEvents.MODIFY.register { id: RegistryKey<LootTable>, tableBuilder, source, _ ->
            if (!source.isBuiltin) return@register
 
             if (diamondHighChance.contains(id.value)) {

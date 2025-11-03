@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier
 import us.codezzops.zombii.rosegold.RoseGoldItems.ROSE_GOLD_IRON_INGOT
 
 object RoseGold : ModInitializer {
-    const val MOD_ID = "rose_gold";
+    const val MOD_ID = "rose_gold"
 
 	override fun onInitialize() {
         RoseGoldItems.init()
@@ -31,7 +31,7 @@ object RoseGold : ModInitializer {
     val ROSE_GOLD_GROUP: ItemGroup = FabricItemGroup.builder()
         .icon { ItemStack(ROSE_GOLD_IRON_INGOT) }
         .displayName(Text.translatable("itemGroup.rose_gold.rose_gold_group"))
-        .entries { context, entries ->
+        .entries { _, entries ->
             RoseGoldItems.addItemsToGroup(entries)
             RoseGoldBlocks.addBlocksToGroup(entries)
             RoseGoldArmorItems.addItemsToGroup(entries)
