@@ -8,5 +8,5 @@
 *.bat           text eol=crlf
 
 #Show us the real shit!!
-*.json linguist-detectable=false
+*.json linguist-detectable=true
 
