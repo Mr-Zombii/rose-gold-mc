@@ -1,6 +1,6 @@
 {
   "item.rose_gold.raw_rose_gold": "Raw Rose Gold",
-  "item.rose_gold.raw_rose_gold_iron":"Raw Rose Gold Iron Mix",
+  "item.rose_gold.raw_rose_gold_iron":"Raw Rose Gold Iron",
   "item.rose_gold.raw_rose_gold_block": "Block of Raw Rose Gold",
 
   "item.rose_gold.rose_gold_apple": "Rose Gold Apple",
@@ -20,8 +20,7 @@
   "item.rose_gold.rose_gold_iron_boots": "Iron Infused Rose Gold Boots",
   "item.rose_gold.rose_gold_iron_block": "Block of Iron Infused Rose Gold",
 
-  "item.rose_gold.rose_gold_diamond_ingot": "Diamond Infused Rose Gold Ingot",
-  "item.rose_gold.rose_gold_diamond_nugget": "Diamond Infused Rose Gold Nugget",
+  "item.rose_gold.rose_gold_diamond_ingot": "Diamond Infused Rose Gold",
   "item.rose_gold.rose_gold_diamond_sword": "Diamond Infused Rose Gold Sword",
   "item.rose_gold.rose_gold_diamond_axe": "Diamond Infused Rose Gold Axe",
   "item.rose_gold.rose_gold_diamond_pickaxe": "Diamond Infused Rose Gold Pickaxe",
