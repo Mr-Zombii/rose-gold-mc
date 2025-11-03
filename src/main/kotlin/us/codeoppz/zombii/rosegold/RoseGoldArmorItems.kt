@@ -3,7 +3,9 @@ package us.codeoppz.zombii.rosegold
 import com.google.common.collect.Maps
 import net.minecraft.item.Item
 import net.minecraft.item.equipment.ArmorMaterial
+import net.minecraft.item.equipment.EquipmentAsset
 import net.minecraft.item.equipment.EquipmentType
+import net.minecraft.registry.Registry
 import net.minecraft.registry.RegistryKey
 import net.minecraft.registry.RegistryKeys
 import net.minecraft.registry.tag.TagKey
@@ -37,6 +39,7 @@ object RoseGoldArmorItems {
         )
     }
 
+    val REGISTRY_KEY: RegistryKey<out Registry<EquipmentAsset?>?> = RegistryKey.ofRegistry<EquipmentAsset?>(Identifier.ofVanilla("equipment_asset"))
     val ROSE_GOLD_ARMOR_MATERIAL: ArmorMaterial = ArmorMaterial(
         20, // durability
         createDefenseMap(
@@ -55,31 +58,31 @@ object RoseGoldArmorItems {
             Identifier.of(RoseGold.MOD_ID, "repairs_rose_gold_armor")
         ),
         RegistryKey.of(
-            RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset")),
-            Identifier.of("rose_gold")
+            REGISTRY_KEY,
+            Identifier.of(RoseGold.MOD_ID, "rose_gold")
         )
     )
 
     val ROSE_GOLD_HELMET = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_helmet")
+        "rose_gold_helmet"
     ) { properties ->
         Item(properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.HELMET))
     }
 
     val ROSE_GOLD_CHESTPLATE = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_chestplate")
+        "rose_gold_chestplate"
     ) { properties ->
         Item(properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.CHESTPLATE))
     }
 
     val ROSE_GOLD_LEGGINGS = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_leggings")
+        "rose_gold_leggings"
     ) { properties ->
         Item(properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.LEGGINGS))
     }
 
     val ROSE_GOLD_BOOTS = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_boots")
+        "rose_gold_boots"
     ) { properties ->
         Item(properties.armor(ROSE_GOLD_ARMOR_MATERIAL, EquipmentType.BOOTS))
     }

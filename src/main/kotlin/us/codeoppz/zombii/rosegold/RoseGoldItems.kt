@@ -20,71 +20,64 @@ object RoseGoldItems {
         ),
         750, 6.0f, 2.0f, 22, TagKey.of(
             Registries.ITEM.key,
-            Identifier.of(RoseGold.MOD_ID, "rose_gold_materials")
+            Identifier.of(RoseGold.MOD_ID, "rose_gold_tool_materials")
         )
     )
 
     fun registerItem(
-        location: Identifier,
+        name: String,
         func: Function<Item.Settings, Item>
     ): Item? {
         val resourceKey = RegistryKey.of(
             Registries.ITEM.key,
-            location
+            Identifier.of(RoseGold.MOD_ID, name)
         )
 
-        val roseGoldItemProperties = Item.Settings()
-        roseGoldItemProperties.registryKey(resourceKey)
-
-        return Registry.register(
-            Registries.ITEM,
-            resourceKey,
-            func.apply(roseGoldItemProperties)
-        )
+        return Items.register(resourceKey, func)
     }
 
     val RAW_ROSE_GOLD = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "raw_rose_gold")
+        "raw_rose_gold"
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_INGOT = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_ingot")
+        "rose_gold_ingot"
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_APPLE = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_apple")
+        "rose_gold_apple"
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_CARROT = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_carrot")
+        "rose_gold_carrot"
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_SWORD = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_sword")
+        "rose_gold_sword"
     ) { properties ->
         Item(properties.sword(material, 3.0f, -2.4f))
     }
 
     val ROSE_GOLD_AXE = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_axe")
+        "rose_gold_axe"
     ) { properties ->
         AxeItem(material, 6.0f, -3.0f, properties)
     }
 
     val ROSE_GOLD_PICKAXE = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_pickaxe")
+        "rose_gold_pickaxe"
     ) { properties ->
         Item(properties.pickaxe(material, 1.5f, -2.8f))
     }
 
     val ROSE_GOLD_SHOVEL = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_shovel")
+        "rose_gold_shovel"
     ) { properties ->
         ShovelItem(material, -0.5f, -3.0f, properties)
     }
 
     val ROSE_GOLD_HOE /* YOU 🫵 */ = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_hoe")
+        "rose_gold_hoe"
     ) { properties ->
         HoeItem(material, -2.0f, -3.0f, properties)
     }
@@ -118,7 +111,7 @@ object RoseGoldItems {
     )
 
     val ROSE_GOLD_SMITHING_UPGRADE_TEMPLATE = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_smithing_upgrade_template")
+        "rose_gold_smithing_upgrade_template"
 
     ) { properties ->
         SmithingTemplateItem(

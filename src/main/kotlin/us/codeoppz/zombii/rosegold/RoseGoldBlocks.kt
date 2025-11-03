@@ -31,7 +31,7 @@ object RoseGoldBlocks {
         Registry.register(Registries.BLOCK, id, block)
 
         if (registerItem) {
-            RoseGoldItems.registerItem(id) { props -> BlockItem(block, props) }
+            RoseGoldItems.registerItem(name) { props -> BlockItem(block, props) }
         }
 
         return block

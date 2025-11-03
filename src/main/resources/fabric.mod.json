@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "rose-gold",
+	"id": "rose_gold",
 	"version": "${version}",
 	"name": "Rose Gold",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -15,7 +15,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/rose-gold/icon.png",
+	"icon": "assets/rose_gold/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
