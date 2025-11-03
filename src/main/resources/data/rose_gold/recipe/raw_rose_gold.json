@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:raw_copper",
+    "R": "minecraft:raw_gold"
+  },
+  "result": {
+    "id": "rose_gold:raw_rose_gold",
+    "count": 1
+  }
+}

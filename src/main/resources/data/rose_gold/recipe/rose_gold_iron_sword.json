@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "r",
+    "r",
+    "/"
+  ],
+  "key": {
+    "r": "rose_gold:rose_gold_infused_iron_ingot",
+    "/": "minecraft:stick"
+  },
+  "result": {
+    "id": "rose_gold:rose_gold_iron_sword",
+    "count": 1
+  }
+}

@@ -49,13 +49,36 @@ object RoseGoldArmorItems {
             3,
             6
         ),
-        25, // enchantmentValue
+        22, // enchantmentValue
         SoundEvents.ITEM_ARMOR_EQUIP_IRON,
         0.5f, // toughness
         0.0f, // knockbackResistance
         TagKey.of(
             RegistryKeys.ITEM,
-            Identifier.of(RoseGold.MOD_ID, "repairs_rose_gold_armor")
+            Identifier.of(RoseGold.MOD_ID, "repairs_rose_gold_iron_armor")
+        ),
+        RegistryKey.of(
+            REGISTRY_KEY,
+            Identifier.of(RoseGold.MOD_ID, "rose_gold")
+        )
+    )
+
+    val ROSE_GOLD_DIAMOND_ARMOR_MATERIAL: ArmorMaterial = ArmorMaterial(
+        40, // durability
+        createDefenseMap(
+            3,
+            6,
+            8,
+            4,
+            7
+        ),
+        22, // enchantmentValue
+        SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+        1.0f, // toughness
+        0.5f, // knockbackResistance
+        TagKey.of(
+            RegistryKeys.ITEM,
+            Identifier.of(RoseGold.MOD_ID, "repairs_rose_gold_diamond_armor")
         ),
         RegistryKey.of(
             REGISTRY_KEY,
@@ -85,6 +108,30 @@ object RoseGoldArmorItems {
         "rose_gold_iron_boots"
     ) { properties ->
         Item(properties.armor(ROSE_GOLD_IRON_ARMOR_MATERIAL, EquipmentType.BOOTS))
+    }
+
+    val ROSE_GOLD_DIAMOND_HELMET = registerItem(
+        "rose_gold_diamond_helmet"
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_DIAMOND_ARMOR_MATERIAL, EquipmentType.HELMET))
+    }
+
+    val ROSE_GOLD_DIAMOND_CHESTPLATE = registerItem(
+        "rose_gold_diamond_chestplate"
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_DIAMOND_ARMOR_MATERIAL, EquipmentType.CHESTPLATE))
+    }
+
+    val ROSE_GOLD_DIAMOND_LEGGINGS = registerItem(
+        "rose_gold_diamond_leggings"
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_DIAMOND_ARMOR_MATERIAL, EquipmentType.LEGGINGS))
+    }
+
+    val ROSE_GOLD_DIAMOND_BOOTS = registerItem(
+        "rose_gold_diamond_boots"
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_DIAMOND_ARMOR_MATERIAL, EquipmentType.BOOTS))
     }
 
     val ROSE_GOLD_HORSE_ARMOR = registerItem(

@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smithing_transform",
-  "template": "rose_gold:rose_gold_iron_smithing_upgrade_template",
-  "base": "minecraft:iron_chestplate",
-  "addition": "rose_gold:rose_gold_ingot",
-  "result": {
-    "id": "rose_gold:rose_gold_iron_chestplate"
-  }
-}

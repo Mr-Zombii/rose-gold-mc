@@ -12,14 +12,6 @@ import net.minecraft.util.Identifier
 
 object RoseGoldLootTables {
     fun registerLoot() {
-        val ironStructures = listOf(
-            Identifier.of("minecraft", "chests/desert_pyramid"),
-            Identifier.of("minecraft", "chests/shipwreck_treasure"),
-            Identifier.of("minecraft", "chests/jungle_pyramid")
-            // We need to fun stuff for nether or overworld ruined portals
-            // Identifier.of("minecraft", "chests/ruined_portal")
-        )
-
         val diamondStructures = listOf(
             Identifier.of("minecraft", "chests/ancient_city"),
             Identifier.of("minecraft", "chests/end_city")
@@ -31,15 +23,6 @@ object RoseGoldLootTables {
 
         LootTableEvents.MODIFY.register { id: RegistryKey<LootTable>, tableBuilder, source, registryLookup: RegistryWrapper.WrapperLookup ->
            if (!source.isBuiltin) return@register
-
-           if (ironStructures.contains(id.value)) {
-               val pool = LootPool.builder()
-                   .conditionally(RandomChanceLootCondition.builder(0.10f))
-                   .rolls(ConstantLootNumberProvider.create(1f))
-                   .with(ItemEntry.builder(RoseGoldItems.ROSE_GOLD_IRON_SMITHING_UPGRADE_TEMPLATE))
-                   .build()
-               tableBuilder.pool(pool)
-           }
 
             if (diamondStructures.contains(id.value)) {
                 val pool = LootPool.builder()
