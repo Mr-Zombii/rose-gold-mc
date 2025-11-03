@@ -22,7 +22,7 @@
   "item.rose_gold.rose_gold_iron_boots": "Iron Infused Rose Gold Boots",
   "item.rose_gold.rose_gold_iron_block": "Block of Iron Infused Rose Gold",
 
-  "item.rose_gold.rose_gold_diamond_ingot": "Diamond Infused Rose Gold",
+  "item.rose_gold.rose_gold_diamond": "Diamond Infused Rose Gold",
   "item.rose_gold.rose_gold_diamond_sword": "Diamond Infused Rose Gold Sword",
   "item.rose_gold.rose_gold_diamond_axe": "Diamond Infused Rose Gold Axe",
   "item.rose_gold.rose_gold_diamond_pickaxe": "Diamond Infused Rose Gold Pickaxe",
@@ -33,6 +33,18 @@
   "item.rose_gold.rose_gold_diamond_leggings": "Diamond Infused Rose Gold Leggings",
   "item.rose_gold.rose_gold_diamond_boots": "Diamond Infused Rose Gold Boots",
   "item.rose_gold.rose_gold_diamond_block": "Block of Diamond Infused Rose Gold",
+
+  "item.rose_gold.rose_gold_netherite_ingot": "Netherite Infused Rose Gold Ingot",
+  "item.rose_gold.rose_gold_netherite_sword": "Netherite Infused Rose Gold Sword",
+  "item.rose_gold.rose_gold_netherite_axe": "Netherite Infused Rose Gold Axe",
+  "item.rose_gold.rose_gold_netherite_pickaxe": "Netherite Infused Rose Gold Pickaxe",
+  "item.rose_gold.rose_gold_netherite_shovel": "Netherite Infused Rose Gold Shovel",
+  "item.rose_gold.rose_gold_netherite_hoe": "Netherite Infused Rose Gold Hoe",
+  "item.rose_gold.rose_gold_netherite_helmet": "Netherite Infused Rose Gold Helmet",
+  "item.rose_gold.rose_gold_netherite_chestplate": "Netherite Infused Rose Gold Chestplate",
+  "item.rose_gold.rose_gold_netherite_leggings": "Netherite Infused Rose Gold Leggings",
+  "item.rose_gold.rose_gold_netherite_boots": "Netherite Infused Rose Gold Boots",
+  "item.rose_gold.rose_gold_netherite_block": "Block of Netherite Infused Rose Gold",
 
   "item.rose_gold.rose_gold_diamond_smithing_upgrade_template": "Rose Gold Diamond Upgrade Smithing Template",
   "item.rose_gold.rose_gold_netherite_smithing_upgrade_template": "Rose Gold Netherite Upgrade Smithing Template"

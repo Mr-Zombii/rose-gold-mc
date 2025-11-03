@@ -78,7 +78,30 @@ object RoseGoldArmorItems {
         22, // enchantmentValue
         SoundEvents.ITEM_ARMOR_EQUIP_IRON,
         1.0f, // toughness
-        0.5f, // knockbackResistance
+        0.1f, // knockbackResistance
+        TagKey.of(
+            RegistryKeys.ITEM,
+            Identifier.of(RoseGold.MOD_ID, "repairs_rose_gold_diamond_armor")
+        ),
+        RegistryKey.of(
+            REGISTRY_KEY,
+            Identifier.of(RoseGold.MOD_ID, "rose_gold")
+        )
+    )
+
+    val ROSE_GOLD_NETHERITE_ARMOR_MATERIAL: ArmorMaterial = ArmorMaterial(
+        50, // durability
+        createDefenseMap(
+            3,
+            6,
+            8,
+            4,
+            7
+        ),
+        22, // enchantmentValue
+        SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+        3.0f, // toughness
+        0.2f, // knockbackResistance
         TagKey.of(
             RegistryKeys.ITEM,
             Identifier.of(RoseGold.MOD_ID, "repairs_rose_gold_diamond_armor")
@@ -145,6 +168,32 @@ object RoseGoldArmorItems {
         "rose_gold_diamond_boots"
     ) { properties ->
         Item(properties.armor(ROSE_GOLD_DIAMOND_ARMOR_MATERIAL, EquipmentType.BOOTS))
+    }
+
+    //NETHERITE
+
+    val ROSE_GOLD_NETHERITE_HELMET = registerItem(
+        "rose_gold_netherite_helmet"
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_NETHERITE_ARMOR_MATERIAL, EquipmentType.HELMET))
+    }
+
+    val ROSE_GOLD_NETHERITE_CHESTPLATE = registerItem(
+        "rose_gold_netherite_chestplate"
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_NETHERITE_ARMOR_MATERIAL, EquipmentType.CHESTPLATE))
+    }
+
+    val ROSE_GOLD_NETHERITE_LEGGINGS = registerItem(
+        "rose_gold_netherite_leggings"
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_NETHERITE_ARMOR_MATERIAL, EquipmentType.LEGGINGS))
+    }
+
+    val ROSE_GOLD_NETHERITE_BOOTS = registerItem(
+        "rose_gold_netherite_boots"
+    ) { properties ->
+        Item(properties.armor(ROSE_GOLD_NETHERITE_ARMOR_MATERIAL, EquipmentType.BOOTS))
     }
 
     fun init() {}

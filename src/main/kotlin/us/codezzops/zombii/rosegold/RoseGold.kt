@@ -34,6 +34,7 @@ object RoseGold : ModInitializer {
         .entries { context, entries ->
             RoseGoldItems.addItemsToGroup(entries)
             RoseGoldBlocks.addBlocksToGroup(entries)
+            RoseGoldArmorItems.addItemsToGroup(entries)
         }
         .build()
 

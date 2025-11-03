@@ -152,12 +152,8 @@ object RoseGoldItems {
 
     //DIAMOND INFUSED
 
-    val ROSE_GOLD_DIAMOND_INGOT = registerItem(
-        "rose_gold_diamond_ingot"
-    ) { properties -> Item(properties) }
-
-    val ROSE_GOLD_DIAMOND_NUGGET = registerItem(
-        "rose_gold_diamond_nugget"
+    val ROSE_GOLD_DIAMOND = registerItem(
+        "rose_gold_diamond"
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_DIAMOND_SWORD = registerItem(
@@ -186,6 +182,42 @@ object RoseGoldItems {
 
     val ROSE_GOLD_DIAMOND_HOE = registerItem(
         "rose_gold_diamond_hoe"
+    ) { properties ->
+        HoeItem(material, -2.0f, -3.0f, properties)
+    }
+
+    //NETHERITE INFUSED
+
+    val ROSE_GOLD_NETHERITE_INGOT = registerItem(
+        "rose_gold_netherite_ingot"
+    ) { properties -> Item(properties) }
+
+    val ROSE_GOLD_NETHERITE_SWORD = registerItem(
+        "rose_gold_netherite_sword"
+    ) { properties ->
+        Item(properties.sword(material, 3.0f, -2.4f))
+    }
+
+    val ROSE_GOLD_NETHERITE_AXE = registerItem(
+        "rose_gold_netherite_axe"
+    ) { properties ->
+        AxeItem(material, 6.0f, -3.0f, properties)
+    }
+
+    val ROSE_GOLD_NETHERITE_PICKAXE = registerItem(
+        "rose_gold_netherite_pickaxe"
+    ) { properties ->
+        Item(properties.pickaxe(material, 1.5f, -2.8f))
+    }
+
+    val ROSE_GOLD_NETHERITE_SHOVEL = registerItem(
+        "rose_gold_netherite_shovel"
+    ) { properties ->
+        ShovelItem(material, -0.5f, -3.0f, properties)
+    }
+
+    val ROSE_GOLD_NETHERITE_HOE = registerItem(
+        "rose_gold_netherite_hoe"
     ) { properties ->
         HoeItem(material, -2.0f, -3.0f, properties)
     }
