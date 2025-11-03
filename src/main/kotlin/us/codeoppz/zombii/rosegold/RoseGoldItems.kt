@@ -45,7 +45,7 @@ object RoseGoldItems {
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_NUGGET = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_nugget")
+        "rose_gold_nugget"
     ) { properties -> Item(properties) }
 
     val ROSE_GOLD_APPLE = registerItem(
@@ -87,7 +87,7 @@ object RoseGoldItems {
     }
 
     val ROSE_GOLD_HORSE_ARMOR = registerItem(
-        Identifier.of(RoseGold.MOD_ID, "rose_gold_horse_armor")
+    "rose_gold_horse_armor"
     ) { properties -> Item(properties) }
 
     var NETHERITE_UPGRADE_APPLIES_TO_TEXT: Text? = Text.translatable(
