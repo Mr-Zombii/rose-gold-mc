@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "rose_gold:item/rose_gold_iron_axe"
+    "model": "rose_gold:item/iron/rose_gold_iron_axe"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#G#",
+    "###"
+  ],
+  "key": {
+    "#": "rose_gold:nugget",
+    "G": "minecraft:golden_carrot"
+  },
+  "result": {
+    "id": "rose_gold:carrot",
+    "count": 1
+  }
+}

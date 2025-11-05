@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "rose_gold:netherite_ingot",
+    "rose_gold:netherite_ingot",
+    "rose_gold:netherite_ingot",
+    "rose_gold:netherite_ingot",
+    "rose_gold:netherite_ingot",
+    "rose_gold:netherite_ingot",
+    "rose_gold:netherite_ingot",
+    "rose_gold:netherite_ingot",
+    "rose_gold:netherite_ingot"
+  ],
+  "result": {
+    "id": "rose_gold:netherite_block",
+    "count": 1
+  }
+}

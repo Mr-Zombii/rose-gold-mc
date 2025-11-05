@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "rose_gold:diamond_smithing_upgrade_template",
+  "base": "minecraft:diamond_sword",
+  "addition": "rose_gold:diamond",
+  "result": {
+    "id": "rose_gold:diamond_sword"
+  }
+}

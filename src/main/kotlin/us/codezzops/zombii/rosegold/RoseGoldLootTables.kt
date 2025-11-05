@@ -36,7 +36,7 @@ object RoseGoldLootTables {
                 val pool = LootPool.builder()
                     .conditionally(RandomChanceLootCondition.builder(0.10f))
                     .rolls(ConstantLootNumberProvider.create(1f))
-                    .with(ItemEntry.builder(RoseGoldItems.ROSE_GOLD_DIAMOND_SMITHING_UPGRADE_TEMPLATE))
+                    .with(ItemEntry.builder(RoseGoldItems.DIAMOND_SMITHING_UPGRADE_TEMPLATE))
                     .build()
                 tableBuilder.pool(pool)
             }
@@ -45,7 +45,7 @@ object RoseGoldLootTables {
                 val pool = LootPool.builder()
                     .conditionally(RandomChanceLootCondition.builder(0.05f))
                     .rolls(ConstantLootNumberProvider.create(1f))
-                    .with(ItemEntry.builder(RoseGoldItems.ROSE_GOLD_DIAMOND_SMITHING_UPGRADE_TEMPLATE))
+                    .with(ItemEntry.builder(RoseGoldItems.DIAMOND_SMITHING_UPGRADE_TEMPLATE))
                     .build()
                 tableBuilder.pool(pool)
             }
@@ -54,7 +54,7 @@ object RoseGoldLootTables {
                 val pool = LootPool.builder()
                     .conditionally(RandomChanceLootCondition.builder(0.02f))
                     .rolls(ConstantLootNumberProvider.create(1f))
-                    .with(ItemEntry.builder(RoseGoldItems.ROSE_GOLD_NETHERITE_SMITHING_UPGRADE_TEMPLATE))
+                    .with(ItemEntry.builder(RoseGoldItems.NETHERITE_SMITHING_UPGRADE_TEMPLATE))
                     .build()
                 tableBuilder.pool(pool)
             }

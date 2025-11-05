@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "rose_gold:rose_gold_iron_pickaxe",
-    "rose_gold:rose_gold_diamond_pickaxe",
-    "rose_gold:rose_gold_netherite_pickaxe"
+    "rose_gold:iron_pickaxe",
+    "rose_gold:diamond_pickaxe",
+    "rose_gold:netherite_pickaxe"
   ]
 }

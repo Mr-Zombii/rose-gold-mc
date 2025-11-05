@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "rose_gold:diamond",
+    "rose_gold:diamond",
+    "rose_gold:diamond",
+    "rose_gold:diamond",
+    "rose_gold:diamond",
+    "rose_gold:diamond",
+    "rose_gold:diamond",
+    "rose_gold:diamond",
+    "rose_gold:diamond"
+  ],
+  "result": {
+    "id": "rose_gold:diamond_block",
+    "count": 1
+  }
+}

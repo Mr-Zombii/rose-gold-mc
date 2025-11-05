@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "rose_gold:raw_iron",
+  "result": {
+    "id": "rose_gold:iron_ingot"
+  },
+  "experience": 1,
+  "cookingtime": 500
+}

@@ -1,16 +1,16 @@
 {
   "values": [
-    "rose_gold:rose_gold_iron_helmet",
-    "rose_gold:rose_gold_iron_chestplate",
-    "rose_gold:rose_gold_iron_leggings",
-    "rose_gold:rose_gold_iron_boots",
-    "rose_gold:rose_gold_diamond_helmet",
-    "rose_gold:rose_gold_diamond_chestplate",
-    "rose_gold:rose_gold_diamond_leggings",
-    "rose_gold:rose_gold_diamond_boots",
-    "rose_gold:rose_gold_netherite_helmet",
-    "rose_gold:rose_gold_netherite_chestplate",
-    "rose_gold:rose_gold_netherite_leggings",
-    "rose_gold:rose_gold_netherite_boots"
+    "rose_gold:iron_helmet",
+    "rose_gold:iron_chestplate",
+    "rose_gold:iron_leggings",
+    "rose_gold:iron_boots",
+    "rose_gold:diamond_helmet",
+    "rose_gold:diamond_chestplate",
+    "rose_gold:diamond_leggings",
+    "rose_gold:diamond_boots",
+    "rose_gold:netherite_helmet",
+    "rose_gold:netherite_chestplate",
+    "rose_gold:netherite_leggings",
+    "rose_gold:netherite_boots"
   ]
 }

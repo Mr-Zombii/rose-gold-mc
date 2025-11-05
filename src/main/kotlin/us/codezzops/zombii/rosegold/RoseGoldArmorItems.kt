@@ -13,7 +13,7 @@ import net.minecraft.registry.tag.TagKey
 import net.minecraft.sound.SoundEvents
 import net.minecraft.util.Identifier
 import us.codezzops.zombii.rosegold.RoseGoldItems.registerItem
-import java.util.*
+import java.util.EnumMap
 
 object RoseGoldArmorItems {
 
@@ -41,12 +41,13 @@ object RoseGoldArmorItems {
         name: String,
         durability: Int,
         defenses: EnumMap<EquipmentType, Int>,
+        enchantability: Int,
         toughness: Float,
         knockback: Float
     ): ArmorMaterial = ArmorMaterial(
         durability,
         defenses,
-        22,
+        enchantability,
         SoundEvents.ITEM_ARMOR_EQUIP_IRON,
         toughness,
         knockback,
@@ -61,24 +62,27 @@ object RoseGoldArmorItems {
     )
 
     val IRON = armorMaterial(
-        "rose_gold_iron",
+        "iron",
         durability = 30,
+        enchantability = 22,
         defenses = defenseMap(2, 5, 7, 3, 6),
         toughness = 0.5f,
         knockback = 0.0f
     )
 
     val DIAMOND = armorMaterial(
-        "rose_gold_diamond",
+        "diamond",
         durability = 35,
+        enchantability = 22,
         defenses = defenseMap(3, 6, 8, 4, 7),
         toughness = 1.0f,
         knockback = 0.1f
     )
 
     val NETHERITE = armorMaterial(
-        "rose_gold_netherite",
+        "netherite",
         durability = 40,
+        enchantability = 22,
         defenses = defenseMap(3, 6, 8, 4, 7),
         toughness = 3.0f,
         knockback = 0.2f
@@ -112,9 +116,9 @@ object RoseGoldArmorItems {
     }
 
     fun init() {
-        registerArmorSet("rose_gold_iron", IRON)
-        registerArmorSet("rose_gold_diamond", DIAMOND)
-        registerArmorSet("rose_gold_netherite", NETHERITE)
+        registerArmorSet("iron", IRON)
+        registerArmorSet("diamond", DIAMOND)
+        registerArmorSet("netherite", NETHERITE)
     }
 
     fun addItemsToGroup(entries: ItemGroup.Entries) {

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "rose_gold:rose_gold_iron_hoe",
-    "rose_gold:rose_gold_diamond_hoe",
-    "rose_gold:rose_gold_netherite_hoe"
+    "rose_gold:iron_hoe",
+    "rose_gold:diamond_hoe",
+    "rose_gold:netherite_hoe"
   ]
 }

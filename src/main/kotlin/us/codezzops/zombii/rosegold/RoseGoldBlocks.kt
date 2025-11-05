@@ -27,23 +27,31 @@ object RoseGoldBlocks {
         return block
     }
 
-    val RAW_ROSE_GOLD_BLOCK = register("raw_rose_gold_block")
-    val RAW_ROSE_GOLD_IRON_BLOCK = register("raw_rose_gold_iron_block")
-    val ROSE_GOLD_BLOCK = register("rose_gold_block")
-    val ROSE_GOLD_IRON_BLOCK = register("rose_gold_iron_block")
-    val ROSE_GOLD_DIAMOND_BLOCK = register("rose_gold_diamond_block")
-    val ROSE_GOLD_NETHERITE_BLOCK = register("rose_gold_netherite_block")
+    val RUBY_ORE = register("ruby_ore")
+    val SAPPHIRE_ORE = register("sapphire_ore")
+    val TOPAZ_ORE = register("topaz_ore")
+    val AMETHYST_ORE = register("amethyst_ore")
+    val RAW_BLOCK = register("raw_block")
+    val RAW_IRON_BLOCK = register("raw_iron_block")
+    val BLOCK = register("block")
+    val IRON_BLOCK = register("iron_block")
+    val DIAMOND_BLOCK = register("diamond_block")
+    val NETHERITE_BLOCK = register("netherite_block")
 
     fun init() {}
 
     fun addBlocksToGroup(entries: ItemGroup.Entries) {
         listOf(
-            RAW_ROSE_GOLD_BLOCK,
-            RAW_ROSE_GOLD_IRON_BLOCK,
-            ROSE_GOLD_BLOCK,
-            ROSE_GOLD_IRON_BLOCK,
-            ROSE_GOLD_DIAMOND_BLOCK,
-            ROSE_GOLD_NETHERITE_BLOCK
+            RUBY_ORE,
+            SAPPHIRE_ORE,
+            TOPAZ_ORE,
+            AMETHYST_ORE,
+            RAW_BLOCK,
+            RAW_IRON_BLOCK,
+            BLOCK,
+            IRON_BLOCK,
+            DIAMOND_BLOCK,
+            NETHERITE_BLOCK
         ).forEach { entries.add(ItemStack(it.asItem())) }
     }
 }

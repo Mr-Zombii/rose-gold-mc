@@ -54,180 +54,172 @@ object RoseGoldItems {
         "raw_rose_gold"
     ) { properties -> Item(properties) }
 
-    val RAW_ROSE_GOLD_IRON = registerItem(
-        "raw_rose_gold_iron"
+    val RAW_IRON = registerItem(
+        "raw_iron"
     ) { properties -> Item(properties) }
 
-    val ROSE_GOLD_APPLE_COMPONENT: FoodComponent = FoodComponent.Builder()
-        .nutrition(6)//TODO this ok?
-        .saturationModifier(0.5f) //TODO 80% saturation
-        .alwaysEdible() //TODO Do we want this?
+    val APPLE_COMPONENT: FoodComponent = FoodComponent.Builder()
+        .nutrition(6) // Todo: Edit nutrition for apple
+        .saturationModifier(0.5f) // Todo: Edit saturation for apple
+        .alwaysEdible() // Todo: Edit edibility for apple
         .build()
 
-    val ROSE_GOLD_APPLE_CONSUMABLE_COMPONENT: ConsumableComponent = ConsumableComponents.food()
+    val APPLE_CONSUMABLE_COMPONENT: ConsumableComponent = ConsumableComponents.food()
         .consumeEffect(
             ApplyEffectsConsumeEffect(
-                StatusEffectInstance(StatusEffects.REGENERATION, 200, 3), //TODO 20 tps * 10 sec, level 3
+                StatusEffectInstance(StatusEffects.REGENERATION, 200, 3), // Todo: Edit status effect for apple
                 1.0f
             )
         )
         .consumeEffect(
             ApplyEffectsConsumeEffect(
-                StatusEffectInstance(StatusEffects.ABSORPTION, 2400, 2), //TODO 20 tps * 120 sec, level 3
-                1.0f
-            )
-        )//TODO change these ^^^
-        .build()
-
-    val ROSE_GOLD_APPLE = registerItem(
-        "rose_gold_apple"
-    ) { properties ->
-        Item(properties.food(
-            ROSE_GOLD_APPLE_COMPONENT,
-            ROSE_GOLD_APPLE_CONSUMABLE_COMPONENT))
-    }
-
-    val ROSE_GOLD_CARROT_COMPONENT: FoodComponent = FoodComponent.Builder()
-        .nutrition(8)//TODO this ok?
-        .saturationModifier(0.8f) //TODO 80% saturation
-        .alwaysEdible() //TODO Do we want this?
-        .build()
-
-    val ROSE_GOLD_CARROT_CONSUMABLE_COMPONENT: ConsumableComponent = ConsumableComponents.food()
-        .consumeEffect(
-            ApplyEffectsConsumeEffect(
-                StatusEffectInstance(StatusEffects.NIGHT_VISION, 200, 0), //TODO 20 tps * 10 sec, level 0
+                StatusEffectInstance(StatusEffects.ABSORPTION, 2400, 2), // Todo: Edit status effect for apple
                 1.0f
             )
         )
         .build()
 
-    val ROSE_GOLD_CARROT = registerItem(
-        "rose_gold_carrot"
+    val APPLE = registerItem(
+        "apple"
     ) { properties ->
         Item(properties.food(
-            ROSE_GOLD_CARROT_COMPONENT,
-            ROSE_GOLD_CARROT_CONSUMABLE_COMPONENT))
+            APPLE_COMPONENT,
+            APPLE_CONSUMABLE_COMPONENT))
     }
 
-    // PURE ROSE GOLD
+    val CARROT_COMPONENT: FoodComponent = FoodComponent.Builder()
+        .nutrition(8) // Todo: Edit nutrition for carrot
+        .saturationModifier(0.8f) // Todo: Edit saturation for carrot
+        .alwaysEdible() // Todo: Edit edibility for carrot
+        .build()
 
-    val ROSE_GOLD_INGOT = registerItem(
-        "rose_gold_ingot"
+    val CARROT_CONSUMABLE_COMPONENT: ConsumableComponent = ConsumableComponents.food()
+        .consumeEffect(
+            ApplyEffectsConsumeEffect(
+                StatusEffectInstance(StatusEffects.NIGHT_VISION, 200, 0), // Todo: Edit status effect for carrot
+                1.0f
+            )
+        )
+        .build()
+
+    val CARROT = registerItem(
+        "carrot"
+    ) { properties ->
+        Item(properties.food(
+            CARROT_COMPONENT,
+            CARROT_CONSUMABLE_COMPONENT))
+    }
+
+    val INGOT = registerItem(
+        "ingot"
     ) { properties -> Item(properties) }
 
-    val ROSE_GOLD_NUGGET = registerItem(
-        "rose_gold_nugget"
+    val NUGGET = registerItem(
+        "nugget"
     ) { properties -> Item(properties) }
 
-    //IRON INFUSED
-
-    val ROSE_GOLD_IRON_INGOT = registerItem(
-        "rose_gold_iron_ingot"
+    val IRON_INGOT = registerItem(
+        "iron_ingot"
     ) { properties -> Item(properties) }
 
-    val ROSE_GOLD_IRON_NUGGET = registerItem(
-        "rose_gold_iron_nugget"
+    val IRON_NUGGET = registerItem(
+        "iron_nugget"
     ) { properties -> Item(properties) }
 
-    val ROSE_GOLD_IRON_SWORD = registerItem(
-        "rose_gold_iron_sword"
+    val IRON_SWORD = registerItem(
+        "iron_sword"
     ) { properties ->
         Item(properties.sword(material, 3.0f, -2.4f))
     }
 
-    val ROSE_GOLD_IRON_AXE = registerItem(
-        "rose_gold_iron_axe"
+    val IRON_AXE = registerItem(
+        "iron_axe"
     ) { properties ->
         AxeItem(material, 6.0f, -3.0f, properties)
     }
 
-    val ROSE_GOLD_IRON_PICKAXE = registerItem(
-        "rose_gold_iron_pickaxe"
+    val IRON_PICKAXE = registerItem(
+        "iron_pickaxe"
     ) { properties ->
         Item(properties.pickaxe(material, 1.5f, -2.8f))
     }
 
-    val ROSE_GOLD_IRON_SHOVEL = registerItem(
-        "rose_gold_iron_shovel"
+    val IRON_SHOVEL = registerItem(
+        "iron_shovel"
     ) { properties ->
         ShovelItem(material, -0.5f, -3.0f, properties)
     }
 
-    val ROSE_GOLD_IRON_HOE /* YOU 🫵 */ = registerItem(
-        "rose_gold_iron_hoe"
+    val IRON_HOE = registerItem(
+        "iron_hoe"
     ) { properties ->
         HoeItem(material, -2.0f, -3.0f, properties)
     }
 
-    //DIAMOND INFUSED
-
-    val ROSE_GOLD_DIAMOND = registerItem(
-        "rose_gold_diamond"
+    val DIAMOND = registerItem(
+        "diamond"
     ) { properties -> Item(properties) }
 
-    val ROSE_GOLD_DIAMOND_SWORD = registerItem(
-        "rose_gold_diamond_sword"
+    val DIAMOND_SWORD = registerItem(
+        "diamond_sword"
     ) { properties ->
         Item(properties.sword(material, 3.0f, -2.4f))
     }
 
-    val ROSE_GOLD_DIAMOND_AXE = registerItem(
-        "rose_gold_diamond_axe"
+    val DIAMOND_AXE = registerItem(
+        "diamond_axe"
     ) { properties ->
         AxeItem(material, 6.0f, -3.0f, properties)
     }
 
-    val ROSE_GOLD_DIAMOND_PICKAXE = registerItem(
-        "rose_gold_diamond_pickaxe"
+    val DIAMOND_PICKAXE = registerItem(
+        "diamond_pickaxe"
     ) { properties ->
         Item(properties.pickaxe(material, 1.5f, -2.8f))
     }
 
-    val ROSE_GOLD_DIAMOND_SHOVEL = registerItem(
-        "rose_gold_diamond_shovel"
+    val DIAMOND_SHOVEL = registerItem(
+        "diamond_shovel"
     ) { properties ->
         ShovelItem(material, -0.5f, -3.0f, properties)
     }
 
-    val ROSE_GOLD_DIAMOND_HOE = registerItem(
-        "rose_gold_diamond_hoe"
+    val DIAMOND_HOE = registerItem(
+        "diamond_hoe"
     ) { properties ->
         HoeItem(material, -2.0f, -3.0f, properties)
     }
 
-    //NETHERITE INFUSED
-
-    val ROSE_GOLD_NETHERITE_INGOT = registerItem(
-        "rose_gold_netherite_ingot"
+    val NETHERITE_INGOT = registerItem(
+        "netherite_ingot"
     ) { properties -> Item(properties) }
 
-    val ROSE_GOLD_NETHERITE_SWORD = registerItem(
-        "rose_gold_netherite_sword"
+    val NETHERITE_SWORD = registerItem(
+        "netherite_sword"
     ) { properties ->
         Item(properties.sword(material, 3.0f, -2.4f))
     }
 
-    val ROSE_GOLD_NETHERITE_AXE = registerItem(
-        "rose_gold_netherite_axe"
+    val NETHERITE_AXE = registerItem(
+        "netherite_axe"
     ) { properties ->
         AxeItem(material, 6.0f, -3.0f, properties)
     }
 
-    val ROSE_GOLD_NETHERITE_PICKAXE = registerItem(
-        "rose_gold_netherite_pickaxe"
+    val NETHERITE_PICKAXE = registerItem(
+        "netherite_pickaxe"
     ) { properties ->
         Item(properties.pickaxe(material, 1.5f, -2.8f))
     }
 
-    val ROSE_GOLD_NETHERITE_SHOVEL = registerItem(
-        "rose_gold_netherite_shovel"
+    val NETHERITE_SHOVEL = registerItem(
+        "netherite_shovel"
     ) { properties ->
         ShovelItem(material, -0.5f, -3.0f, properties)
     }
 
-    val ROSE_GOLD_NETHERITE_HOE = registerItem(
-        "rose_gold_netherite_hoe"
+    val NETHERITE_HOE = registerItem(
+        "netherite_hoe"
     ) { properties ->
         HoeItem(material, -2.0f, -3.0f, properties)
     }
@@ -260,8 +252,8 @@ object RoseGoldItems {
         )
     )
 
-    val ROSE_GOLD_DIAMOND_SMITHING_UPGRADE_TEMPLATE = registerItem(
-        "rose_gold_diamond_smithing_upgrade_template"
+    val DIAMOND_SMITHING_UPGRADE_TEMPLATE = registerItem(
+        "diamond_smithing_upgrade_template"
 
     ) { properties ->
         SmithingTemplateItem(
@@ -275,8 +267,8 @@ object RoseGoldItems {
         )
     }
 
-    val ROSE_GOLD_NETHERITE_SMITHING_UPGRADE_TEMPLATE = registerItem(
-        "rose_gold_netherite_smithing_upgrade_template"
+    val NETHERITE_SMITHING_UPGRADE_TEMPLATE = registerItem(
+        "netherite_smithing_upgrade_template"
 
     ) { properties ->
         SmithingTemplateItem(
@@ -294,7 +286,6 @@ object RoseGoldItems {
 
     fun addItemsToGroup(entries: ItemGroup.Entries) {
         this::class.members
-            // Filter only for properties that are of type Item
             .filter { it.returnType.classifier == Item::class }
             .filterIsInstance<KProperty1<RoseGoldItems, Item>>()
             .map { it.get(this) }

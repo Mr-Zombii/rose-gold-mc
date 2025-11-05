@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    "rose_gold:raw_rose_gold_block"
+    "rose_gold:raw_block"
   ],
   "result": {
     "id": "rose_gold:raw_rose_gold",

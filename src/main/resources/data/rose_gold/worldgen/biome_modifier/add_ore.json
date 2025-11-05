@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": ["rose_gold:amethyst_ore_placed", "rose_gold:sapphire_ore_placed", "rose_gold:ruby_ore_placed", "rose_gold:topaz_ore_placed"],
+  "step": "underground_ores"
+}

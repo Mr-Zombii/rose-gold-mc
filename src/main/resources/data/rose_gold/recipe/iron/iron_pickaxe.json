@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "r": "rose_gold:iron_ingot",
+    "/": "minecraft:stick"
+  },
+  "result": {
+    "id": "rose_gold:iron_pickaxe",
+    "count": 1
+  }
+}

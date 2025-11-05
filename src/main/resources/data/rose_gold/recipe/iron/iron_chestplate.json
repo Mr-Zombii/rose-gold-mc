@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "r r",
+    "rrr",
+    "rrr"
+  ],
+  "key": {
+    "r": "rose_gold:iron_ingot"
+  },
+  "result": {
+    "id": "rose_gold:iron_chestplate",
+    "count": 1
+  }
+}

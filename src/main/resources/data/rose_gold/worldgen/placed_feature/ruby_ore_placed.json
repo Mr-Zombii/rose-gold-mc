@@ -1,0 +1,16 @@
+{
+  "feature": "rose_gold:ruby_ore",
+  "placement": [
+    { "type": "minecraft:count", "count": 3 },
+    { "type": "minecraft:in_square" },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": { "absolute": -63 },
+        "max_inclusive": { "absolute": -30 }
+      }
+    },
+    { "type": "minecraft:biome" }
+  ]
+}

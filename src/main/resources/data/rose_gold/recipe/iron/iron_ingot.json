@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "rose_gold:iron_nugget",
+    "rose_gold:iron_nugget",
+    "rose_gold:iron_nugget",
+    "rose_gold:iron_nugget",
+    "rose_gold:iron_nugget",
+    "rose_gold:iron_nugget",
+    "rose_gold:iron_nugget",
+    "rose_gold:iron_nugget",
+    "rose_gold:iron_nugget"
+  ],
+  "result": {
+    "id": "rose_gold:iron_ingot",
+    "count": 1
+  }
+}
