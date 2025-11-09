@@ -29,8 +29,11 @@
 				"value": "us.codezzops.zombii.rosegold.RoseGoldClient",
 				"adapter": "kotlin"
 			}
-		]
-	},
+		],
+        "fabric-datagen": [
+          "us.codezzops.zombii.rosegold.RoseGoldDataGenerator"
+        ]
+    },
 	"mixins": [
 		"rose-gold.mixins.json",
 		{
